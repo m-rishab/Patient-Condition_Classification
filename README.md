@@ -35,6 +35,8 @@ This project focuses on classifying the condition of a patient based on their re
 ## Project Demo
 ## *DEMO-1*
 ![f09fb82c-1725-470c-baf4-1d9a584a0047](https://github.com/m-rishab/Patient-Condition_Classification/assets/113618652/0e13d667-fd4a-468d-947a-a82dd4476819)
+## *DEMO-2*
+![4753fca3-e12a-47c6-be53-3f5a0e0f9f4c](https://github.com/m-rishab/Patient-Condition_Classification/assets/113618652/40496c5b-69bf-47cf-96c8-2a2950ab967e)
 
 
 
