@@ -8,3 +8,4 @@ stopwords
 wordcloud
 scikit-learn
 seaborn
+corpus
