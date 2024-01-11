@@ -33,6 +33,10 @@ This project focuses on classifying the condition of a patient based on their re
    - Evaluate and compare the performance of both models.
 
 ## Project Demo
+## *DEMO-1*
+![f09fb82c-1725-470c-baf4-1d9a584a0047](https://github.com/m-rishab/Patient-Condition_Classification/assets/113618652/0e13d667-fd4a-468d-947a-a82dd4476819)
+
+
 
 [![Project Demo](https://example.com/path/to/your/demo.gif)](https://example.com/path/to/your/demo.gif)
 
