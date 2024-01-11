@@ -6,3 +6,5 @@ nltk
 bs4
 stopwords
 wordcloud
+scikit-learn
+seaborn
