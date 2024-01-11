@@ -34,8 +34,6 @@ This project focuses on classifying the condition of a patient based on their re
 
 ## Dataset
 
-Input patient reviews can be obtained from the [dataset link](insert_dataset_link_here).
-
 ### Dataset Description
 
 - The dataset contains patient reviews in a structured format.
@@ -46,7 +44,7 @@ Input patient reviews can be obtained from the [dataset link](insert_dataset_lin
 
 To download the dataset, follow these steps:
 
-1. Click on the [dataset link]([insert_dataset_link_here](https://drive.google.com/drive/folders/1BSKN0kgpT5nNo6tiWwXo62iOKQHVUeOn?usp=sharing)).
+Input patient reviews can be obtained from the [dataset link](https://drive.google.com/file/d/19z69qG7W98C_t-CMrV42K1Q9FQk2-fpk/view?usp=sharing).
 
 Feel free to contribute additional datasets or report any issues related to the dataset.
 
