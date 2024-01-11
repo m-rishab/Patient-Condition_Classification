@@ -1,0 +1,32 @@
+<!-- predict.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to Roboto font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Patient Condition Classification</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Predict Patient Condition</h1>
+
+        {% if result %}
+            <div class="card">
+                <div class="card-body">
+                    <h2>Prediction Results</h2>
+                    <p>Input Text: {{ rawtext }}</p>
+                    <p>Prediction Result: {{ result }}</p>
+                    <p>Top Drugs: {{ top_drugs }}</p>
+                </div>
+            </div>
+        {% else %}
+            <p>No prediction available.</p>
+        {% endif %}
+        
+    </div>
+</body>
+</html>

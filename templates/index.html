@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Patient Condition Classification</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Patient Condition Classification</h1>
+        
+        <div class="card">
+            <div class="card-body">
+                <h2>About the Project</h2>
+                <p>Welcome to the Patient Condition Classification project. This system predicts patient conditions based on input text and recommends top drugs associated with the predicted condition.</p>
+                <p><i>Provide a sentence describing the patient condition in the input box below, and click the "Predict" button to see the results.</i></p>
+            </div>
+        </div>
+
+        <form action="/predict" method="post">
+            <label for="rawtext"><b>Enter Patient Condition Sentence:</b></label>
+            <input type="text" id="rawtext" name="rawtext" required>
+            <button type="submit">Predict</button>
+        </form>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+        <!-- Bar Chart for Top Conditions -->
+        <div class="card">
+            <h3>Top Conditions</h3>
+            <ul class="condition-list">
+                {% for condition in top_conditions %}
+                    <li>{{ condition }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <!-- Top Drugs Card -->
+        <div class="card">
+            <h3>Top Drugs with 10/10 Rating</h3>
+            <ul class="drug-list">
+                {% for drug in top_drugs_10_rating %}
+                    <li>{{ drug }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
