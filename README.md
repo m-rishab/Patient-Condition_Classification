@@ -32,6 +32,25 @@ This project focuses on classifying the condition of a patient based on their re
 7. **Comparison:**
    - Evaluate and compare the performance of both models.
 
+## Dataset
+
+Input patient reviews can be obtained from the [dataset link](insert_dataset_link_here).
+
+### Dataset Description
+
+- The dataset contains patient reviews in a structured format.
+- Ensure that the data covers a diverse range of medical conditions.
+- Include information on how to format or structure the input data for the model.
+
+### Downloading the Dataset
+
+To download the dataset, follow these steps:
+
+1. Click on the [dataset link]([insert_dataset_link_here](https://drive.google.com/drive/folders/1BSKN0kgpT5nNo6tiWwXo62iOKQHVUeOn?usp=sharing)).
+
+Feel free to contribute additional datasets or report any issues related to the dataset.
+
+
 ## Project Demo
 ## *DEMO-1*
 ![f09fb82c-1725-470c-baf4-1d9a584a0047](https://github.com/m-rishab/Patient-Condition_Classification/assets/113618652/0e13d667-fd4a-468d-947a-a82dd4476819)
