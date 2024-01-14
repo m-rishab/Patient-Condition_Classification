@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request
+import nltk
 import os
 import joblib
 import pandas as pd
@@ -6,6 +7,8 @@ import re
 from nltk.stem import WordNetLemmatizer
 from nltk.corpus import stopwords
 from bs4 import BeautifulSoup
+nltk.download('stopwords')
+nltk.download('wordnet')
 
 HTML_WRAPPER = """<div style="overflow-x: auto; border: 1px solid #e6e9ef; border-radius: 0.25rem; padding: 1rem">{}</div>"""
 
@@ -14,7 +17,7 @@ app = Flask(__name__)
 app.secret_key = os.urandom(24)
 MODEL_PATH = 'notebook/model/passmodel.pkl'
 TOKENIZER_PATH = 'notebook/model/tfidfvectorizer.pkl'
-DATA_PATH = 'data/DrugsTest_raw.csv'
+DATA_PATH = 'data/DrugsTrain_raw.csv'
 
 # Loading vectorizer and model
 vectorizer = joblib.load(TOKENIZER_PATH)
