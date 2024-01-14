@@ -14,7 +14,7 @@ app = Flask(__name__)
 app.secret_key = os.urandom(24)
 MODEL_PATH = 'notebook/model/passmodel.pkl'
 TOKENIZER_PATH = 'notebook/model/tfidfvectorizer.pkl'
-DATA_PATH = 'data/drugsComTrain_raw.csv'
+DATA_PATH = 'data/DrugsTest_raw.csv'
 
 # Loading vectorizer and model
 vectorizer = joblib.load(TOKENIZER_PATH)
